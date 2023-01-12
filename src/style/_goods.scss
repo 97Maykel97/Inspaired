@@ -1,0 +1,38 @@
+.goods {
+	&__title {
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 39px;
+		text-align: center;
+		text-transform: uppercase;
+		padding-bottom: 25px;
+		border-bottom: 1px solid $gray;
+		@include tablet {
+			font-size: 24px;
+			line-height: 29px;
+			padding-bottom: 16px;
+		}
+		@include mobile {
+			font-size: 18px;
+			line-height: 22px;
+			padding-bottom: 9px;
+		}
+	}
+	&__list {
+		padding-top: 40px;
+		display: grid;
+		gap: 40px 20px;
+		grid-template-columns: repeat(auto-fill, 280px);
+		justify-content: space-evenly;
+		@include tablet {
+			row-gap: 24px;
+			padding-top: 24px;
+			grid-template-columns: repeat(auto-fill, 140px);
+		}
+
+		@include mobile {
+			gap: 16, 10px;
+			padding-top: 16px;
+		}
+	}
+}
