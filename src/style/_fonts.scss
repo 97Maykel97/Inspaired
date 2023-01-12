@@ -1,28 +1,33 @@
-/* inter-regular - cyrillic */
+/* inter-regular - latin_cyrillic */
 @font-face {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
+	font-display: swap;
 	src: local(''),
-		url('../fonts/inter-v12-cyrillic-regular.woff2') format('woff2'),
+		url('../fonts/inter-v12-latin_cyrillic-regular.woff2') format('woff2'),
 		/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../fonts/inter-v12-cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+			url('../fonts/inter-v12-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* inter-600 - cyrillic */
+/* inter-600 - latin_cyrillic */
 @font-face {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 600;
-	src: local(''), url('../fonts/inter-v12-cyrillic-600.woff2') format('woff2'),
+	font-display: swap;
+	src: local(''),
+		url('../fonts/inter-v12-latin_cyrillic-600.woff2') format('woff2'),
 		/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../fonts/inter-v12-cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+			url('../fonts/inter-v12-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* inter-700 - cyrillic */
+/* inter-700 - latin_cyrillic */
 @font-face {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 700;
-	src: local(''), url('../fonts/inter-v12-cyrillic-700.woff2') format('woff2'),
+	font-display: swap;
+	src: local(''),
+		url('../fonts/inter-v12-latin_cyrillic-700.woff2') format('woff2'),
 		/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../fonts/inter-v12-cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+			url('../fonts/inter-v12-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

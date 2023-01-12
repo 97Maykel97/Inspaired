@@ -6,27 +6,50 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
 			rel="preload"
-			href="fonts/inter-v12-cyrillic-600.woff2"
+			href="fonts/inter-v12-latin_cyrillic-600.woff2"
 			as="font"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="fonts/inter-v12-cyrillic-700.woff2"
+			href="fonts/inter-v12-latin_cyrillic-700.woff2"
 			as="font"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="fonts/inter-v12-cyrillic-regular.woff2"
+			href="fonts/inter-v12-latin_cyrillic-regular.woff2"
 			as="font"
 			crossorigin
 		/>
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="icon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="icon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="icon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="icon/site.webmanifest" />
+		<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#08171b" />
+		<meta name="msapplication-TileColor" content="#41393b" />
+		<meta name="theme-color" content="#ffffff" />
+
 		<title>Inspaired - Онлайн магазин нижнего белья</title>
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
+			<div class="container header__container">
 				<a href="tel:+79304902620" class="header__phone header__link"
 					>8 930 490 26 20</a
 				>
@@ -128,7 +151,9 @@
 					<!-- v/.navigation__gender -->
 					<ul class="navigation__category category">
 						<li class="category__item">
-							<a href="" class="category__link">Бюстгальтеры</a>
+							<a href="" class="category__link category__link_active"
+								>Бюстгальтеры</a
+							>
 						</li>
 						<li class="category__item">
 							<a href="" class="category__link">Трусы</a>

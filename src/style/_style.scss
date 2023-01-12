@@ -13,6 +13,7 @@ body {
 	min-width: 320px;
 	min-height: 100vh;
 	font-family: 'Inter', sans-serif;
+	font-weight: 400;
 
 	background-color: $second-color;
 	color: $main-color;
@@ -27,6 +28,7 @@ svg {
 }
 
 button {
+	display: block;
 	padding: 0;
 	cursor: pointer;
 	background-color: transparent;
@@ -74,7 +76,21 @@ fieldset {
 */
 
 .container {
-	max-width: 1240px;
-	padding: 0 30px;
+	--max-width: 1180px;
+	--padding: 30px;
+	max-width: calc(var(--max-width) + var(--padding) * 2);
+	padding: 0 calc(var(--padding));
 	margin: 0 auto;
+
+	@include laptop {
+		--max-width: 880px;
+	}
+
+	@include tablet {
+		--max-width: 620px;
+	}
+
+	@include mobile {
+		--padding: 15px;
+	}
 }
