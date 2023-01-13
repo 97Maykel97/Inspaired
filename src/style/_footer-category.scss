@@ -1,0 +1,45 @@
+.footer-category {
+	&__title {
+		padding-bottom: 24px;
+		@include tablet {
+			padding-bottom: 16px;
+		}
+		@include mobile {
+			padding-bottom: 8px;
+		}
+	}
+	&__list {
+		display: flex;
+		gap: 80px;
+		justify-content: space-between;
+		@include laptop {
+			gap: 30px;
+		}
+		@include tablet {
+			flex-direction: column;
+			gap: 7px;
+		}
+	}
+	&__subtitle {
+		margin-bottom: 10px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		@include tablet {
+			font-size: 12px;
+			line-height: 15px;
+			margin-bottom: 0;
+		}
+	}
+
+	&__sublist {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+		font-size: 14px;
+		line-height: 17px;
+		@include tablet {
+			display: none;
+		}
+	}
+}

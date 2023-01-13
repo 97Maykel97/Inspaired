@@ -1,0 +1,62 @@
+.product {
+	&__link {
+		transition: color 0.2 ease-in-out;
+		&:hover {
+			color: $gray;
+		}
+	}
+	&__image {
+		margin-bottom: 16px;
+		@include tablet {
+			margin-bottom: 10px;
+		}
+	}
+	&__title {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		margin-bottom: 13px;
+		@include tablet {
+			font-size: 12px;
+			line-height: 15px;
+			margin-bottom: 5px;
+		}
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		// align-items: center;
+		margin-bottom: 12px;
+		@include tablet {
+			margin-bottom: 3px;
+		}
+	}
+	&__price {
+		font-size: 14px;
+		line-height: 17px;
+		@include tablet {
+			font-size: 12px;
+			line-height: 15px;
+		}
+	}
+	&__btn-favourite {
+		width: 24px;
+		height: 24px;
+		transition: background-image 0.3s ease-in-out;
+		background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9572 20.25C12.9572 20.25 3.54871 15 3.54871 8.62501C3.5489 7.49826 3.94071 6.40635 4.65754 5.53493C5.37436 4.66351 6.37195 4.06636 7.48069 3.84501C8.58943 3.62367 9.74088 3.79179 10.7393 4.32079C11.7377 4.84979 12.5214 5.70702 12.9572 6.74673L12.9572 6.74673C13.393 5.70702 14.1767 4.84979 15.1751 4.32079C16.1735 3.79179 17.3249 3.62367 18.4337 3.84501C19.5424 4.06636 20.54 4.66351 21.2568 5.53493C21.9737 6.40635 22.3655 7.49826 22.3657 8.62501C22.3657 15 12.9572 20.25 12.9572 20.25Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+		&:hover {
+			background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9572 20.25C12.9572 20.25 3.54871 15 3.54871 8.62501C3.5489 7.49826 3.94071 6.40635 4.65754 5.53493C5.37436 4.66351 6.37195 4.06636 7.48069 3.84501C8.58943 3.62367 9.74088 3.79179 10.7393 4.32079C11.7377 4.84979 12.5214 5.70702 12.9572 6.74673L12.9572 6.74673C13.393 5.70702 14.1767 4.84979 15.1751 4.32079C16.1735 3.79179 17.3249 3.62367 18.4337 3.84501C19.5424 4.06636 20.54 4.66351 21.2568 5.53493C21.9737 6.40635 22.3655 7.49826 22.3657 8.62501C22.3657 15 12.9572 20.25 12.9572 20.25Z' stroke='black' fill='red' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+		}
+		&_active {
+			background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9572 20.25C12.9572 20.25 3.54871 15 3.54871 8.62501C3.5489 7.49826 3.94071 6.40635 4.65754 5.53493C5.37436 4.66351 6.37195 4.06636 7.48069 3.84501C8.58943 3.62367 9.74088 3.79179 10.7393 4.32079C11.7377 4.84979 12.5214 5.70702 12.9572 6.74673L12.9572 6.74673C13.393 5.70702 14.1767 4.84979 15.1751 4.32079C16.1735 3.79179 17.3249 3.62367 18.4337 3.84501C19.5424 4.06636 20.54 4.66351 21.2568 5.53493C21.9737 6.40635 22.3655 7.49826 22.3657 8.62501C22.3657 15 12.9572 20.25 12.9572 20.25Z' stroke='red' fill='red' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+			&:hover {
+				background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9572 20.25C12.9572 20.25 3.54871 15 3.54871 8.62501C3.5489 7.49826 3.94071 6.40635 4.65754 5.53493C5.37436 4.66351 6.37195 4.06636 7.48069 3.84501C8.58943 3.62367 9.74088 3.79179 10.7393 4.32079C11.7377 4.84979 12.5214 5.70702 12.9572 6.74673L12.9572 6.74673C13.393 5.70702 14.1767 4.84979 15.1751 4.32079C16.1735 3.79179 17.3249 3.62367 18.4337 3.84501C19.5424 4.06636 20.54 4.66351 21.2568 5.53493C21.9737 6.40635 22.3655 7.49826 22.3657 8.62501C22.3657 15 12.9572 20.25 12.9572 20.25Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+			}
+		}
+	}
+	&__color-list {
+		display: flex;
+		align-items: center;
+		gap: 3px;
+	}
+}
